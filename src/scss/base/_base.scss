@@ -1,0 +1,23 @@
+*{ margin:0; padding:0; box-sizing:inherit; }
+body{ box-sizing:border-box; font-family:'Roboto', sans-serif; }
+
+.wrap{width:100%; position: relative; }
+
+.content{
+  width:65%;
+  margin:0 auto;
+  padding:5rem 0;
+}
+
+p{line-height:1.6rem; padding:.5rem 0; font-weight:300;}
+p:first-child{padding-top:0;}
+p:last-child{padding-bottom:0;}
+
+$mainBlack:rgb(65,65,65);
+$mainWhite:rgb(245,245,245);
+
+@mixin clearfix{ clear:both; content:''; display:table; }
+@mixin absoluteCenter{
+  position:absolute; top:50%; left:50%;
+  transform:translate(-50%,-50%);
+}
