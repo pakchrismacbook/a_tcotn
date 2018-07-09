@@ -1,0 +1,27 @@
+.about{
+  &__header{
+    background-color:$pri_blue;
+    padding:70px 150px;
+    &__text-content{
+      &-passage{
+        font-family: $passage;
+        font-size:1.35rem;
+        letter-spacing:1px;
+        line-height:1.8;
+        color:darken($pri_white,2%);
+      }
+      &-verse{
+        font-family: $verse;
+        text-align:right;
+        font-size:1.5rem;
+        color:$pri_yellow;
+      }
+    }
+  }
+
+  &__location{
+    display:flex;
+    &-left{flex:1.6; background-color:pink;}
+    &-right{flex:3; background-color:aliceblue;}
+  }
+}

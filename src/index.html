@@ -1,14 +1,49 @@
 <html>
 <head>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,500,900|Arima+Madurai:700|Bad+Script" rel="stylesheet">
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.chunks.main.css %>">
 </head>
 <body>
 
-  <nav class="nav"></nav>
+  <nav class="nav">
+    <h1 class="nav__title">the church<br><small>of the nations</small></h1>
+    <div class="nav__links">
+      <a class="nav__links-link" href="">about</a>
+      <a class="nav__links-link" href="">message</a>
+      <a class="nav__links-link" href="">ministry</a>
+      <a class="nav__links-link" href="">contact</a>
+    </div>
+  </nav>
 
   <header class="header"></header>
 
+  <div class="about" id="about">
+    <div class="about__header">
+      <div class="about__header__text-content">
+        <p class="about__header__text-content-passage">“The Spirit of the Lord is on me, because he has anointed me to proclaim good news to the poor. He has sent me to proclaim freedom for the prisoners and recovery of sight for the blind, to set the oppressed free, to proclaim the year of the Lord’s favor.”</p>
+        <p class="about__header__text-content-verse">Luke 4:18-19</p>
+      </div>
+
+    </div>
+    <div class="about__location">
+      <div class="about__location-left">
+        left <br> left <br> left
+      </div>
+      <div class="about__location-right">
+        right
+      </div>
+    </div>
+  </div>
+
+
+  <div class="filler" style="height:150vh"></div>
+
+  <footer class="footer">
+    <div class="footer__content">
+      <p>810 East 9th Avenue Anchorage, Alaska 99518</p>
+    </div>
+  </footer>
 
   <script src="<%= htmlWebpackPlugin.files.chunks.main.entry %>"></script>
 </body>

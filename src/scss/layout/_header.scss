@@ -1,4 +1,15 @@
 .header{
   width:100%; height:100vh;
-  background-image:url();
+  background-image:
+    linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.3),
+      rgba(0, 0, 0, 0.1) 15%,
+      transparent,
+      rgba(255, 255, 255, 0.15) 75%,
+      rgba(255, 255, 255, 0.6)
+    ),
+    url(/../../../assets/header/images/prayforak.jpg);
+  background-size:cover; background-position:center; background-attachment:fixed;
+
 }

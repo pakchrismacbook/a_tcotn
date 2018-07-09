@@ -1,1 +1,32 @@
+*,*::before,*::after{ margin:0; padding:0; box-sizing:inherit; }
+html{ box-sizing:border-box; }
+body{
+  font-family: 'Roboto', sans-serif;
+  font-weight:300;
+  line-height:1.6;
+}
+
+$pri_white:rgb(240, 240, 245);
+$pri_yellow:rgb(255, 245, 175);
+$pri_blue:rgb(45, 95, 140);
+
+$passage:'Bad Script', cursive;
+$verse: 'Arima Madurai', cursive;
+
+@font-face{
+  font-family:'gothamL';
+  src:url(/../../assets/fonts/gotham/GothamLight.ttf);
+}
+@font-face{
+  font-family:'gothamM';
+  src:url(/../../assets/fonts/gotham/GothamMedium.ttf);
+}
+@font-face{
+  font-family:'gothamB';
+  src:url(/../../assets/fonts/gotham/Gotham-Black.otf);
+}
+
+@import './layout/_nav';
 @import './layout/_header';
+@import './layout/_about';
+@import './layout/_footer';
