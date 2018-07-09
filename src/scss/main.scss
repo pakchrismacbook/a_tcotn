@@ -13,6 +13,8 @@ $pri_blue:rgb(45, 95, 140);
 $passage:'Bad Script', cursive;
 $verse: 'Arima Madurai', cursive;
 
+@mixin content_padding{ padding:7.5vh 10vw; }
+
 @font-face{
   font-family:'gothamL';
   src:url(/../../assets/fonts/gotham/GothamLight.ttf);

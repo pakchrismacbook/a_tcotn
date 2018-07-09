@@ -1,8 +1,9 @@
 .about{
   &__header{
     background-color:$pri_blue;
-    padding:70px 150px;
-    &__text-content{
+    // padding:70px 150px;
+    &__passage-content{
+      @include content_padding;
       &-passage{
         font-family: $passage;
         font-size:1.35rem;
@@ -19,9 +20,61 @@
     }
   }
 
-  &__location{
+  &__content-block{
+    // @include content_padding;
     display:flex;
-    &-left{flex:1.6; background-color:pink;}
-    &-right{flex:3; background-color:aliceblue;}
+    font-size:1.1rem;
+    &__location{
+      background-color:darken($pri_blue,10%);
+      color:darken($pri_white,10%);
+      flex:1.6;
+      display:flex; justify-content:center; align-items:center;
+      &__text-content{
+        display:block;
+        font-weight:500;
+        letter-spacing:1.5px;
+      }
+      &-head{
+        text-transform:uppercase;
+        color:$pri_yellow;
+        font-size:1.5rem;
+        margin-bottom:.5rem;
+      }
+    }
+    &__service{
+      background-color:lighten($pri_blue,40%);
+      padding:5rem 0;
+      flex:3;
+      text-align:center;
+      &-head{
+        text-transform:uppercase;
+        font-size:2.25rem;
+        margin-bottom:2rem;
+      }
+      &-time{
+        display:inline-block;
+        &-block{
+          display:inline-block;
+          border:7px solid black;
+          border-radius:50%;
+          width:145px; height:145px;
+          margin:0 1rem;
+          position:relative;
+          p{
+            position:absolute; top:50%; transform:translateY(-50%);
+            width:100%; text-align:center;
+            font-weight:900; font-size:1.5rem;
+          }
+        }
+      }
+    }
+  }
+  &__pastor{
+    &__text-content{
+      &-p{
+        padding-top:.6rem;
+        font-size:1.25rem;
+      }
+    }
   }
 }
