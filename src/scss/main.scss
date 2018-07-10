@@ -16,8 +16,8 @@ $verse: 'Arima Madurai', cursive;
 @mixin content_padding{ padding:7.5vh 10vw; }
 
 @font-face{
-  font-family:'gothamL';
-  src:url(/../../assets/fonts/gotham/GothamLight.ttf);
+  font-family:'gotham_light';
+  src:url(/../../assets/fonts/gotham/GothamLight.ttf) format('truetype');
 }
 @font-face{
   font-family:'gothamM';

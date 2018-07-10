@@ -3,8 +3,12 @@
   width:100%;
   font-family:gothamB;
   text-transform:uppercase;
+  display:flex;
+  justify-content:space-between;
+  padding:1.5rem 2rem 0 2rem;
+
   &__title{
-    position: absolute; top:10px; left:45px;
+
     color:white;
     display:inline-block;
     border:3px solid white;
@@ -16,15 +20,13 @@
     small{ font-family:gothamM; letter-spacing:1px; }
   }
   &__links{
-    position: absolute; top:3rem; right:45px;
-    display:inline-block;
-    font-family:gothamL;
-    text-shadow:0 3px 2px rgba(40,40,40,.8);
-    &-link{}
-    &-link:not(:last-child){ margin-right:25px;; }
-    &-link:link,&-link:visited{
-      text-decoration:none;
-      color:white;
+
+    align-self:center;
+    font-family:'gotham_light',Fallback,sans-serif;
+    &-link{
+      p{ display:inline-block; }
+      &:not(:last-child){ margin-right:1.25rem; }
+      &:link,&:visited{ text-decoration:none; color:white; }
     }
 
   }
