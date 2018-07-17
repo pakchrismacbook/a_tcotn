@@ -2,5 +2,27 @@
   background-color:pink;
   &__content{
     @include content_padding;
+    display:flex;
+    justify-content:space-between;
+    @media(max-width:575px){ flex-direction:column; padding:2rem 3rem;}
+
+    p{
+      font-size:1.15rem;
+      @media(max-width:575px){ font-size:1rem; }
+    }
+    &-left{
+      &-h4{
+        font-size:1.35rem;
+        @media(max-width:575px){ font-size:1.15rem; }
+      }
+    }
+    &-right{
+      h4:last-of-type{
+        margin-top:1rem;
+      }
+      @media(max-width:575px){
+        padding-top:1rem;
+      }
+    }
   }
 }

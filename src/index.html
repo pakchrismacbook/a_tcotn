@@ -7,18 +7,19 @@
 <body>
 
   <nav class="nav">
-    <div class="logo">
+    <div class="logo"><a href="#header">
       <h1 class="nav__title">the church<br><small>of the nations</small></h1>
+    </a>
     </div>
     <div class="nav__links">
       <a class="nav__links-link" href="#about"><p>about</p></a>
-      <a class="nav__links-link" href="#"><p>message</p></a>
+      <a class="nav__links-link" href="#message"><p>message</p></a>
       <a class="nav__links-link" href="#"><p>ministry</p></a>
       <a class="nav__links-link" href="#"><p>contact</p></a>
     </div>
   </nav>
 
-  <header class="header"></header>
+  <header class="header" id="header"></header>
 
   <div class="about" id="about">
     <div class="about__header">
@@ -26,15 +27,17 @@
         <p class="about__header__passage-content-passage">“The Spirit of the Lord is on me, because he has anointed me to proclaim good news to the poor. He has sent me to proclaim freedom for the prisoners and recovery of sight for the blind, to set the oppressed free, to proclaim the year of the Lord’s favor.”</p>
         <p class="about__header__passage-content-verse">Luke 4:18-19</p>
       </div>
-
     </div>
 
     <div class="about__pastor">
       <h2>the church</h2>
       <div class="about__pastor__content">
         <div class="about__pastor__content__image-div">
-          <img src="/../../../assets/images/about/akfam2.jpg" alt="family" class="about__pastor__content__image-div-img">
-
+          <picture>
+            <source media="(max-width:750px)" srcset="/../../../assets/images/about/akfam2sm.jpg">
+            <source media="(min-width:751px)" srcset="/../../../assets/images/about/akfam2.jpg">
+            <img src="/../../../assets/images/about/akfam2.jpg" alt="family" class="about__pastor__content__image-div-img">
+          </picture>
         </div>
         <div class="about__pastor__text-content">
           <p class="about__pastor__text-content-p">The Church of The Nations was established in 2008 and has been under pastoral care of Senior Pastor, Reverend Daniel Song and Associate Pastor, Reverend John Kwon. Our Lord God has sent these messengers from Korea to bring forth healings and restoration of His people through the mighty Word of God along with the presence of the Spirit of God.</p>
@@ -48,31 +51,80 @@
       <div class="about__content-block__location">
         <div class="about__content-block__location__text-content">
           <p class="about__content-block__location-head"><strong>location</strong></p>
-          <p>810 East 9th Avenue</p>
-          <p>Anchorage, Alaska 99518</p>
-          <p>907-947-1872</p>
+          <p class="about__content-block__location__text-content-text">810 East 9th Avenue</p>
+          <p class="about__content-block__location__text-content-text">Anchorage, Alaska 99518</p>
+          <p class="about__content-block__location__text-content-text">907-947-1872</p>
         </div>
       </div>
       <div class="about__content-block__service">
         <p class="about__content-block__service-head"><strong>sunday service</strong></p>
         <div class="about__content-block__service-time">
-          <span class="about__content-block__service-time-block"><p>9:00 AM</p></span>
-          <span class="about__content-block__service-time-block"><p>12:00 PM</p></span>
+          <p class="about__content-block__service-time-text">We believe in the freedom of worship in spirit and in truth as “The Body of Christ.” Please join us for Sunday worship service
+          at 3:00 pm.</p>
           <span class="about__content-block__service-time-block"><p>3:00 PM</p></span>
         </div>
       </div>
     </div>
-    
+  </div>
+
+  <div class="message" id="message">
+    <div class="message__content-current">
+        <h2 class="message__title">This Week's Message</h2>
+      <h3 class="message__content-current__head">Who is Jesus Christ to you?</h3>
+      <p class="message__content-current__subhead">Pastor Daniel Song</p>
+      <video src="http://tcotnalaska.org/TCOTN/2018-07-01_DanielSong_WhoIsJesustoYou.mp4" controls>
+        embedded video not supported
+      </video>
+    </div>
+    <div class="message__content-past">
+      <h3>Past Messages</h3>
+      <div class="message__content-past__content">
+        <div class="message__content__block-past">
+          <a class="message-link" href="http://tcotnalaska.org/TCOTN/2018-06-24_DanielSong_WhatDoesItMeanToHonorJesus.mp4" target="_blank">
+            <p class="message-date">2018-06-24</p>
+            <p><strong>What does it mean to honor Jesus?</strong></p>
+          </a>
+          <p>Pastor Daniel Song</p>
+        </div>
+        <div class="message__content__block-past">
+          <a class="message-link" href="http://tcotnalaska.org/TCOTN/2018-06-17_JohnKwon_IAmAChildOfGod.mp4" target="_blank">2018-06-17</a>
+          <p><strong>I am a child of God</strong></p>
+          <p>Pastor John Kwon</p>
+        </div>
+        <div class="message__content__block-past">
+          <a class="message-link" href="http://tcotnalaska.org/TCOTN/2018-06-10_DanielSong_WordOfGodDoesNotChange.mp4" target="_blank">2018-06-10</a>
+          <p><strong>The Word of God does not change</strong></p>
+          <p>Pastor Daniel Song</p>
+        </div>
+
+      </div>
+    </div>
   </div>
 
 
-  <!-- <div class="filler" style="height:150vh"></div> -->
+
+  <div class="ministry">
+    
+  </div>
+  
+
+
 
   <footer class="footer">
     <div class="footer__content">
-      <p>810 East 9th Avenue</p>
-      <p>Anchorage, Alaska 99518</p>
-      <p>907-947-1872</p>
+      <div class="footer__content-left">
+        <h4 class="footer__content-left-h4">The Church of the Nations</h4>
+        <p>810 East 9th Avenue</p>
+        <p>Anchorage, Alaska 99518</p>
+        <p>907-947-1872</p>
+      </div>
+      <div class="footer__content-right">
+        <h4>Sunday Service</h4>
+        <p>3:00 PM</p>
+        <h4>Follow Us</h4>
+        <img src="../assets/images/footer/facebook.svg" alt="">
+
+      </div>
     </div>
   </footer>
 
