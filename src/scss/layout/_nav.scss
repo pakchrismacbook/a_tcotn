@@ -5,10 +5,9 @@
   text-transform:uppercase;
   display:flex;
   justify-content:space-between;
-  padding:1rem 2rem 1rem 2rem;
+  padding:1rem;
 
   &__title{
-
     color:white;
     display:inline-block;
     border:3px solid white;
@@ -26,13 +25,7 @@
     &-link{
       p{
         display:inline-block;
-        @media(max-width:700px){
-          display:block;
-          text-align:right;
-          font-size:.8rem;
-          margin:-.25rem 0;
-          text-shadow:0 3px 3px black;
-        }
+
       }
       &:not(:last-child){ margin-right:1.25rem; }
       &:link,&:visited{ text-decoration:none; color:white; }
@@ -41,8 +34,3 @@
   }
 }
 
-@media(max-width:750px){
-  .logo{
-    transform:scale(.7) translate(-4rem, -1rem);
-  }
-}

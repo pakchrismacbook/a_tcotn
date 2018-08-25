@@ -4,6 +4,7 @@ body{
   font-family: 'Roboto', sans-serif;
   font-weight:300;
   line-height:1.6;
+  overflow:scrollY;
 }
 
 $pri_white:rgb(240, 240, 245);
@@ -13,7 +14,9 @@ $pri_blue:rgb(45, 95, 140);
 $passage:'Bad Script', cursive;
 $verse: 'Arima Madurai', cursive;
 
-@mixin content_padding{ padding:10vh 10vw; }
+@mixin content_padding{
+  padding:10vh 10vw;
+}
 
 @font-face{
   font-family:'gotham_light';
@@ -28,9 +31,9 @@ $verse: 'Arima Madurai', cursive;
   src:url(/../../assets/fonts/gotham/Gotham-Black.otf);
 }
 
-@import './layout/_nav';
-@import './layout/_header';
-@import './layout/_about';
-@import './layout/_message';
-@import './layout/_ministry';
-@import './layout/_footer';
+@import 'layout/_nav';
+@import 'layout/_header';
+@import 'layout/_about';
+@import 'layout/_message';
+@import 'layout/_ministry';
+@import 'layout/_footer';

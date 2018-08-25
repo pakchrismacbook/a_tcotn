@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "dev": "webpack --mode development",
-    "start": "webpack-dev-server --mode development --open 'firefox developer edition'",
+    "start": "webpack-dev-server --mode development --open 'google chrome'",
     "build": "webpack --mode production"
   },
   "keywords": [],

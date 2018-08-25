@@ -1,4 +1,5 @@
 .about{
+  overflow: hidden;
   &__header{
     background-color:$pri_blue;
 
@@ -10,14 +11,14 @@
         letter-spacing:1px;
         line-height:1.8;
         color:darken($pri_white,2%);
-        @media(max-width:530px){font-size:1.1rem;}
+
       }
       &-verse{
         font-family: $verse;
         text-align:right;
         font-size:1.5rem;
         color:$pri_yellow;
-        @media(max-width:530px){font-size:1.2rem;}
+
       }
     }
   }
@@ -25,14 +26,14 @@
   &__content-block{
     display:flex;
     font-size:1.1rem;
-    @media(max-width:820px){flex-direction:column;}
+
     &__location{
       background-color:darken($pri_blue,10%);
       color:darken($pri_white,10%);
       flex:1.5;
       display:flex; align-items:center;
       padding-left:10vw;
-      @media(max-width:820px){padding:2rem 0 2rem 10vw;}
+
       &__text-content{
         display:block;
         font-weight:500;
@@ -55,20 +56,20 @@
       padding:5rem 0;
       flex:2.5;
       text-align:center;
-      @media(max-width:820px){padding:2rem 0;}
+
 
       &-head{
         text-transform:uppercase;
         font-size:2.25rem;
         margin-bottom:2rem;
-        @media(max-width:465px){font-size:1.75rem;margin-bottom:.75rem;}
+
       }
       &-time{
         display:inline-block;
         &-text{
           margin:0 10vh 3rem 10vh; text-align:left;
           font-size:1.25rem;
-          @media(max-width:465px){margin:0 5vh .5rem 5vh;font-size:1.15rem;}
+
         }
         &-block{
           display:inline-block;
@@ -77,12 +78,12 @@
           width:145px; height:145px;
           margin:0 1rem;
           position:relative;
-          @media(max-width:465px){width:105px; height:105px;}
+
           p{
             position:absolute; top:50%; transform:translateY(-50%);
             width:100%; text-align:center;
             font-weight:900; font-size:1.5rem;
-            @media(max-width:465px){font-size:1.15rem;}
+
           }
         }
       }
@@ -98,7 +99,7 @@
     }
     &__content{
       display:flex;
-      @media(max-width:750px){flex-direction:column;}
+
       &__image-div{
 
         flex:3;
@@ -109,14 +110,14 @@
       }
     }
     &__text-content{
-      @media(max-width:750px){ margin:1rem 0 0 0; }
+
       flex:4;
       margin-left:1.5rem;
       &-p{
         &:first-child{ padding-top:0; }
         padding-top:.75rem;
         font-size:1.25rem;
-        @media(max-width:956px){font-size:1rem;}
+
       }
     }
   }
